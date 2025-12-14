@@ -122,9 +122,136 @@
 
   </div> <!-- End grid -->
 
-  
+
 
 </section>
+
+    <section class="relative w-full max-w-[1400px] mx-auto px-4 md:px-0">
+
+  <!-- Tabs -->
+  <div class="border-b border-gray-200 pb-0">
+    <div class="flex gap-2 md:gap-8 md:w-auto">
+      <button data-tab="details"
+        class="tab-btn w-[328px] h-[52px] md:w-auto md:h-auto py-3 md:py-4 px-2 md:px-1 text-sm md:text-base font-medium whitespace-nowrap text-black border-b-2 border-black font-semibold">
+        <span class="hidden md:inline">Product </span>Details
+      </button>
+      <button data-tab="colors"
+        class="tab-btn w-[328px] h-[52px] md:w-auto md:h-auto py-3 md:py-4 px-2 md:px-1 text-sm md:text-base font-medium whitespace-nowrap text-gray-600 border-b-2 border-transparent hover:text-gray-800">
+        <span class="hidden md:inline">Product </span>Colors
+      </button>
+      <button data-tab="sizes"
+        class="tab-btn w-[328px] h-[52px] md:w-auto md:h-auto py-3 md:py-4 px-2 md:px-1 text-sm md:text-base font-medium whitespace-nowrap text-gray-600 border-b-2 border-transparent hover:text-gray-800">
+        <span class="hidden md:inline">Product </span>Sizes
+      </button>
+      <button data-tab="delivery"
+        class="tab-btn w-[328px] h-[52px] md:w-auto md:h-auto py-3 md:py-4 px-2 md:px-1 text-sm md:text-base font-medium whitespace-nowrap text-gray-600 border-b-2 border-transparent hover:text-gray-800">
+        <span class="hidden md:inline">Product </span>Delivery
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab Contents -->
+  <div class="mt-8 md:mt-12">
+
+    <!-- DETAILS TAB -->
+    <div id="details" class="tab-content space-y-8 md:space-y-16">
+      <div class="md:max-w-[1314px] md:mx-auto">
+        <h2 class="text-lg md:text-2xl font-bold mb-4 md:mb-6 tracking-tight w-[320px] md:w-auto h-[58px] md:h-auto">
+          Product information "Falkon Pro Race Jersey"
+        </h2>
+        <div class="bg-white rounded-lg">
+          <p class="text-sm md:text-base text-gray-700 leading-relaxed w-[320px] md:w-auto h-[249px] md:h-auto">
+            Engineered with an identical cut to the Falkon model, this jersey delivers a fitted, comfortable silhouette designed for full freedom of movement. Made from 100% Aerek 80 polyester, it offers exceptional breathability and moisture-wicking performance to keep you dry during intense exertion. The durable fabric resists wear while remaining lightweight and flexible, ensuring comfort throughout every race. Perfect for athletes who demand performance without compromise.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIZES TAB -->
+    <div id="sizes" class="tab-content hidden space-y-8 md:space-y-12">
+      <div class="md:max-w-[700px] space-y-3 md:space-y-4">
+        <h2 class="text-base md:text-lg font-semibold">Sizes</h2>
+        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+          Find your perfect fit with our Falkon Pro Race Jersey. Designed for a fitted, performance-oriented silhouette, our sizing ensures comfort and freedom of movement.
+        </p>
+        <select class="w-full max-w-[320px] border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-black">
+          <option selected disabled>Select Size</option>
+          <option>Small (S)</option>
+          <option>Medium (M)</option>
+          <option>Large (L)</option>
+          <option>Extra Large (XL)</option>
+        </select>
+      </div>
+
+      <!-- Size Images - Mobile -->
+      <div class="md:hidden grid grid-cols-2 gap-4 items-end">
+        <div class="text-center space-y-2">
+          <img src="./assets/size/sm.svg" alt="Small (S)" class="mx-auto object-contain w-[128px] h-[110px]">
+          <p class="text-xs font-medium">Small (S)</p>
+        </div>
+        <div class="text-center space-y-2">
+          <img src="./assets/size/md.svg" alt="Medium (M)" class="mx-auto object-contain w-[199px] h-[169px]">
+          <p class="text-xs font-medium">Medium (M)</p>
+        </div>
+        <div class="text-center space-y-2">
+          <img src="./assets/size/lr.svg" alt="Large (L)" class="mx-auto object-contain w-[263px] h-[274px]">
+          <p class="text-xs font-medium">Large (L)</p>
+        </div>
+        <div class="text-center space-y-2">
+          <img src="./assets/size/xl.svg" alt="Extra Large (XL)" class="mx-auto object-contain w-[322px] h-[367px]">
+          <p class="text-xs font-medium">Extra Large (XL)</p>
+        </div>
+      </div>
+
+      <!-- Size Images - Desktop -->
+      <div class="hidden md:grid md:grid-cols-4 gap-8 items-end">
+        <div class="text-center space-y-3">
+          <img src="./assets/size/sm.svg" alt="Small (S)" class="mx-auto object-contain w-[128px] h-[110px]">
+          <p class="text-sm font-medium">Small (S)</p>
+        </div>
+        <div class="text-center space-y-3">
+          <img src="./assets/size/md.svg" alt="Medium (M)" class="mx-auto object-contain w-[199px] h-[169px]">
+          <p class="text-sm font-medium">Medium (M)</p>
+        </div>
+        <div class="text-center space-y-3">
+          <img src="./assets/size/lr.svg" alt="Large (L)" class="mx-auto object-contain w-[263px] h-[274px]">
+          <p class="text-sm font-medium">Large (L)</p>
+        </div>
+        <div class="text-center space-y-3">
+          <img src="./assets/size/xl.svg" alt="Extra Large (XL)" class="mx-auto object-contain w-[322px] h-[367px]">
+          <p class="text-sm font-medium">Extra Large (XL)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLORS TAB -->
+    <div id="colors" class="tab-content hidden space-y-6 md:space-y-10">
+      <h2 class="text-lg md:text-xl font-semibold">Colors</h2>
+      <p class="text-xs md:text-sm text-gray-600 leading-relaxed mt-6 md:mt-[49px]">
+        Choose the look that matches your style and ride with confidence. The Falkon Pro Race Jersey is available in a curated range of high-performance colors.
+      </p>
+      <div class="space-y-6 md:space-y-8 mt-8 md:mt-16">
+        <div>
+          <img src="./assets/color/text.svg" alt="Color text" class="w-full max-w-[520px] h-auto object-contain">
+        </div>
+        <div class="flex flex-col space-y-3 md:space-y-4 gap-2 md:gap-[14px]">
+          <img src="./assets/color/uimg.svg" alt="Upper view" class="w-full h-auto object-contain">
+          <img src="./assets/color/limg.svg" alt="Lower view" class="w-full h-auto object-contain">
+        </div>
+      </div>
+    </div>
+
+    <!-- DELIVERY TAB -->
+    <div id="delivery" class="tab-content hidden space-y-6 md:space-y-10">
+      <h2 class="text-lg md:text-xl font-semibold">Delivery Detail</h2>
+      <p class="text-xs md:text-sm text-gray-600 leading-relaxed mt-6 md:mt-[49px]">
+        Find your perfect fit with the Falkon Pro Race Jersey, designed for a sleek, performance-focused silhouette that moves with you. Delivery info goes here.
+      </p>
+    </div>
+
+  </div>
+</section>
+
     <script type="module" src="index.js"></script>
 
 </body>

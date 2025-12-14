@@ -32,3 +32,33 @@ thumbnails.forEach((thumb) => {
     thumb.classList.add('border-black');
   });
 });
+
+
+// ====== TABS FUNCTIONALITY ======
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const target = btn.getAttribute('data-tab');
+
+    // Remove active styles from all buttons
+    tabButtons.forEach(b => {
+      b.classList.remove('text-black', 'border-black', 'font-semibold');
+      b.classList.add('text-gray-600', 'border-transparent');
+    });
+
+    // Add active styles to clicked button
+    btn.classList.add('text-black', 'border-black', 'font-semibold');
+    btn.classList.remove('text-gray-600', 'border-transparent');
+
+    // Hide all tab contents
+    tabContents.forEach(content => content.classList.add('hidden'));
+
+    // Show target tab content
+    const activeTab = document.getElementById(target);
+    if (activeTab) {
+      activeTab.classList.remove('hidden');
+    }
+  });
+});
