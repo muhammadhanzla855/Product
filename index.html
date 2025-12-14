@@ -165,68 +165,103 @@
     </div>
 
     <!-- SIZES TAB -->
-    <div id="sizes" class="tab-content hidden space-y-8 md:space-y-12">
-      <div class="bg-white p-6 md:p-8 rounded-xl shadow-md space-y-4">
-        <h2 class="text-lg md:text-xl font-semibold">Sizes</h2>
-        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-          Find your perfect fit with our Falkon Pro Race Jersey. Designed for a fitted, performance-oriented silhouette, our sizing ensures comfort and freedom of movement.
-        </p>
-        <select class="w-full max-w-[320px] border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-black">
-          <option selected disabled>Select Size</option>
-          <option>Small (S)</option>
-          <option>Medium (M)</option>
-          <option>Large (L)</option>
-          <option>Extra Large (XL)</option>
-        </select>
-      </div>
+<div id="sizes" class="tab-content hidden space-y-10 md:space-y-14">
 
-      <!-- Size Images - Mobile -->
-      <div class="md:hidden grid grid-cols-2 gap-4 mt-6">
-        <div class="text-center">
-          <img src="./assets/size/sm.svg" alt="Small (S)" class="mx-auto object-contain w-[128px] h-[110px] mb-2">
-          <p class="text-xs font-medium">Small (S)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/md.svg" alt="Medium (M)" class="mx-auto object-contain w-[199px] h-[169px] mb-2">
-          <p class="text-xs font-medium">Medium (M)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/lr.svg" alt="Large (L)" class="mx-auto object-contain w-[263px] h-[274px] mb-2">
-          <p class="text-xs font-medium">Large (L)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/xl.svg" alt="Extra Large (XL)" class="mx-auto object-contain w-[322px] h-[367px] mb-2">
-          <p class="text-xs font-medium">Extra Large (XL)</p>
-        </div>
-      </div>
+  <!-- TEXT + DROPDOWN (shared for all screens) -->
+  <div class="bg-white p-6 md:p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-lg md:text-xl font-semibold">Sizes</h2>
 
-      <!-- Size Images - Desktop -->
-      <div class="hidden md:grid md:grid-cols-4 gap-8 mt-6">
-        <div class="text-center">
-          <img src="./assets/size/sm.svg" alt="Small (S)" class="mx-auto object-contain w-[128px] h-[110px] mb-2">
-          <p class="text-sm font-medium">Small (S)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/md.svg" alt="Medium (M)" class="mx-auto object-contain w-[199px] h-[169px] mb-2">
-          <p class="text-sm font-medium">Medium (M)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/lr.svg" alt="Large (L)" class="mx-auto object-contain w-[263px] h-[274px] mb-2">
-          <p class="text-sm font-medium">Large (L)</p>
-        </div>
-        <div class="text-center">
-          <img src="./assets/size/xl.svg" alt="Extra Large (XL)" class="mx-auto object-contain w-[322px] h-[367px] mb-2">
-          <p class="text-sm font-medium">Extra Large (XL)</p>
-        </div>
-      </div>
+    <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-2xl">
+      Find your perfect fit with our Falkon Pro Race Jersey. Designed for a fitted,
+      performance-oriented silhouette, our sizing ensures comfort and freedom of movement.
+    </p>
+
+    <select
+      class="w-full max-w-[320px] border border-gray-300 rounded-md px-4 py-3 text-sm
+             focus:outline-none focus:ring-1 focus:ring-black"
+    >
+      <option selected disabled>Select Size</option>
+      <option>Small (S)</option>
+      <option>Medium (M)</option>
+      <option>Large (L)</option>
+      <option>Extra Large (XL)</option>
+    </select>
+  </div>
+
+  <!-- ================= MOBILE IMAGES ================= -->
+  <div class="grid grid-cols-2 gap-6 md:hidden">
+    <div class="text-center">
+      <img src="./assets/size/sm.svg" class="mx-auto w-[96px] h-[96px] object-contain" />
+      <p class="mt-2 text-xs font-medium">Small (S)</p>
     </div>
+
+    <div class="text-center">
+      <img src="./assets/size/md.svg" class="mx-auto w-[140px] h-[140px] object-contain" />
+      <p class="mt-2 text-xs font-medium">Medium (M)</p>
+    </div>
+
+    <div class="text-center">
+      <img src="./assets/size/lr.svg" class="mx-auto w-[180px] h-[180px] object-contain" />
+      <p class="mt-2 text-xs font-medium">Large (L)</p>
+    </div>
+
+    <div class="text-center">
+      <img src="./assets/size/xl.svg" class="mx-auto w-[220px] h-[220px] object-contain" />
+      <p class="mt-2 text-xs font-medium">Extra Large (XL)</p>
+    </div>
+  </div>
+
+  <!-- ================= DESKTOP IMAGES ================= -->
+  <div
+    class="hidden md:block mx-auto"
+    style="width:1104px; height:443px;"
+  >
+    <div class="grid grid-cols-4 gap-12 px-10 items-end h-full">
+
+      <!-- Small -->
+      <div class="flex flex-col items-center text-center">
+        <div class="flex items-end h-[367px]">
+          <img src="./assets/size/sm.svg" style="width:128px; height:110px;" />
+        </div>
+        <p class="mt-4 text-sm font-medium">Small (S)</p>
+      </div>
+
+      <!-- Medium -->
+      <div class="flex flex-col items-center text-center">
+        <div class="flex items-end h-[367px]">
+          <img src="./assets/size/md.svg" style="width:199px; height:169px;" />
+        </div>
+        <p class="mt-4 text-sm font-medium">Medium (M)</p>
+      </div>
+
+      <!-- Large -->
+      <div class="flex flex-col items-center text-center">
+        <div class="flex items-end h-[367px]">
+          <img src="./assets/size/lr.svg" style="width:263px; height:274px;" />
+        </div>
+        <p class="mt-4 text-sm font-medium">Large (L)</p>
+      </div>
+
+      <!-- Extra Large -->
+      <div class="flex flex-col items-center text-center">
+        <div class="flex items-end h-[367px]">
+          <img src="./assets/size/xl.svg" style="width:322px; height:367px;" />
+        </div>
+        <p class="mt-4 text-sm font-medium">Extra Large (XL)</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
 
     <!-- COLORS TAB -->
     <div id="colors" class="tab-content hidden space-y-6 md:space-y-10">
       <div class="bg-white p-6 md:p-8 rounded-xl shadow-md space-y-6">
         <h2 class="text-lg md:text-xl font-semibold">Colors</h2>
         <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-          Choose the look that matches your style and ride with confidence. The Falkon Pro Race Jersey is available in a curated range of high-performance colors.
+          Choose the look that matches your style and ride with confidence. The Falkon Pro Race Jersey is available in a curated range of high-performance colors, each selected to complement its sleek, athletic silhouette. Our colors are designed to stay vibrant over time, thanks to premium fade-resistant fabrics.
         </p>
 
         <!-- Color Images -->
@@ -255,6 +290,47 @@ Your order is handled with care through our reliable delivery service. We dispat
     </div>
 
   </div>
+</section>
+
+    <!-- ================= YOUTUBE VIDEO SECTION ================= -->
+<section class="w-full max-w-[1400px] mx-auto mt-20 px-4 md:px-0">
+
+  <!-- Desktop -->
+  <div class="hidden md:flex justify-center">
+    <div
+      class="relative"
+      style="width:996px; height:485px;"
+    >
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        src="https://www.youtube.com/embed/vACBvtV6AGY?si=FK6Oh3w-c9LkpIMy"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div class="md:hidden flex justify-center">
+    <div
+      class="relative"
+      style="width:320px; height:160px;"
+    >
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        src="https://www.youtube.com/embed/vACBvtV6AGY?si=FK6Oh3w-c9LkpIMy"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
 </section>
 
     <script type="module" src="index.js"></script>
