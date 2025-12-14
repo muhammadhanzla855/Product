@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+<section class="max-w-[1400px] mx-auto px-6 pt-10">
+
+  <!-- GRID: Thumbnails | Main Image | Right Content -->
+  <div class="grid grid-cols-1 lg:grid-cols-[120px_640px_1fr] gap-10 items-stretch">
+
+    <!-- ================= THUMBNAILS (LEFT) ================= -->
+    <div class="order-2 lg:order-1 flex lg:flex-col gap-4 pt-6 h-full">
+      <img src="./assets/change/first.jpg"
+           class="w-[72px] h-[72px] lg:w-[120px] lg:h-[150px] border border-gray-200 rounded-md bg-white object-contain cursor-pointer hover:border-black transition" />
+      <img src="./assets/change/secound.png"
+           class="w-[72px] h-[72px] lg:w-[120px] lg:h-[150px] border border-gray-200 rounded-md bg-white object-contain cursor-pointer hover:border-black transition" />
+      <img src="./assets/change/third.jpg"
+           class="w-[72px] h-[72px] lg:w-[120px] lg:h-[150px] border border-gray-200 rounded-md bg-white object-contain cursor-pointer hover:border-black transition" />
+      <img src="./assets/change/four.jpg"
+           class="w-[72px] h-[72px] lg:w-[120px] lg:h-[150px] border border-gray-200 rounded-md bg-white object-contain cursor-pointer hover:border-black transition" />
+    </div>
+
+    <!-- ================= MAIN IMAGE (CENTER) ================= -->
+    <div class="order-1 lg:order-2 h-full flex items-center justify-center">
+      <div class="w-full h-full border rounded bg-white flex items-center justify-center">
+        <img id="mainProductImage"
+             src="./assets/images/m-ing.jpeg"
+             class="max-w-full max-h-full lg:max-h-[calc(150px*4+24px*3)] object-contain"
+             alt="Product Image" />
+      </div>
+    </div>
+
+    <!-- ================= RIGHT CONTENT ================= -->
+    <div class="order-3 h-full flex flex-col space-y-6">
+
+      <p class="uppercase text-xs text-gray-500">Black Friday › BF Women</p>
+
+      <h1 class="text-3xl font-semibold leading-snug">
+        VEKTRA Women's Short-Sleeve Trail Running Shirt
+      </h1>
+
+      <!-- PRICE -->
+      <div class="flex items-center gap-3">
+        <span class="text-xl font-semibold">$215.00</span>
+        <span class="text-sm line-through text-gray-400">$290.00</span>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div class="space-y-2">
+        <p class="text-sm text-gray-600">
+          Discover Vektra, the newest addition to the collection, with the same cut
+          as the Falkon, made from breathable and durable Aerek 80 fabric.
+        </p>
+        <p class="text-sm text-gray-600">
+          Everything you need for light and comfortable running.
+        </p>
+      </div>
+
+      <!-- INFO -->
+      <div class="flex gap-12 pt-2">
+        <div class="flex items-center gap-3">
+          <img src="./assets/icons/women.svg" class="w-8 h-8" />
+          <div>
+            <p class="text-xs uppercase text-gray-400">Sex</p>
+            <p class="text-sm">Women</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <img src="./assets/icons/poids.svg" class="w-8 h-8" />
+          <div>
+            <p class="text-xs uppercase text-gray-400">Poids</p>
+            <p class="text-sm">105 gr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD TO CART & BOTTOM BUTTONS -->
+      <div class="mt-auto space-y-4">
+
+        <button class="w-full h-[60px] bg-black text-white">
+          ADD TO CART
+        </button>
+
+        <div class="flex gap-3">
+          <div class="flex border h-[52px] w-[140px]">
+            <div class="w-10 flex items-center justify-center">−</div>
+            <div class="flex-1 flex items-center justify-center border-x">1</div>
+            <div class="w-10 flex items-center justify-center">+</div>
+          </div>
+
+          <div class="border border-black flex-1 h-[52px] flex items-center justify-center">
+            ADD TO WISHLIST
+          </div>
+        </div>
+
+        <div class="bg-gray-100 px-4 py-3">
+          <img src="./assets/icons/free.svg" class="h-4 mb-2" />
+          <p class="text-xs text-gray-500">
+            Kindly place your order by 6pm on December 22nd for expedited processing
+          </p>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500 mb-2">Payment method</p>
+          <div class="flex gap-3">
+            <img src="./assets/icons/visa.svg" class="h-8" />
+            <img src="./assets/icons/mastercard.svg" class="h-8" />
+            <img src="./assets/icons/US.svg" class="h-8" />
+            <img src="./assets/icons/learnmore.svg" class="h-8" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div> <!-- End grid -->
+
+  
+
+</section>
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
